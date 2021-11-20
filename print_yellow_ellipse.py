@@ -9,7 +9,7 @@ class MainP(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('UI.ui', self)
-        self.pushButton.clicked.connect(self.paint)
+        self.pushButton1.clicked.connect(self.paint)
         self.do_paint = False
 
     def paintEvent(self, event):
@@ -25,7 +25,7 @@ class MainP(QMainWindow):
 
     def draw_ellipse(self, qp):
         qp.setBrush(QColor(255, 255, 0))
-        x = random.randrange(10, 200, 10)
+        y = random.randrange(10, 200, 10)
         qp.drawEllipse(random.randrange(10, 400, 10), random.randrange(10, 400, 10), x, x)
 
 
