@@ -25,8 +25,8 @@ class MainP(QMainWindow, Ui_MainWindow):
 
     def draw_ellipse(self, qp):
         qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
-        y = random.randrange(10, 200, 10)
-        qp.drawEllipse(random.randrange(10, 400, 10), random.randrange(10, 400, 10), y, y)
+        x = random.randrange(10, 200, 10)
+        qp.drawEllipse(random.randrange(10, 400, 10), random.randrange(10, 400, 10), x, x)
 
 
 if __name__ == '__main__':
